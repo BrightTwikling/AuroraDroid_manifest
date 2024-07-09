@@ -82,6 +82,8 @@
   <!-- Remote Packages -->
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="aurora" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aurora" />
+  <project path="packages/apps/Auroras" name="packages_apps_Auroras" remote="aurora" />
+  <project path="vendor/support" name="vendor_support" remote="aurora" />
 
   <!-- Remote Packages Modules -->
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="aurora" />
