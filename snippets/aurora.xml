@@ -27,7 +27,6 @@
   <!-- Remote General repos -->
   <project path="art" name="art" remote="aurora" />
   <project path="bionic" name="bionic" remote="aurora" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="aurora" />
   <project path="build/make" name="build" remote="aurora" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />

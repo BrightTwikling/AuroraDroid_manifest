@@ -39,6 +39,7 @@
   <project path="system/bpf" name="android_system_bpf" remote="lineage" />
   <project path="system/security" name="android_system_security" remote="lineage" />
   <project path="system/vold" name="android_system_vold" remote="lineage" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="lineage" />
 
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
