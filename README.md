@@ -28,3 +28,5 @@ $ make bacon
 # Credits:
 
  * [**LineageOS**](https://github.com/LineageOS)
+ * [**Project Everest**](https://github.com/ProjectEverest)
+ * [**EuclidOS**](https://github.com/euclidTeam)
