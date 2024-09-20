@@ -5,30 +5,34 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
-  <!-- Gitlab -->
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
+  <!-- CodeBerg -->
+  <remote  name="code"
+           fetch="https://codeberg.org/AuroraDroid/" 
+           revision='15'/>
 
   <!-- AuroraDroid -->
   <remote  name="aurora"
            fetch="https://github.com/AuroraDroid"
-           revision="14" />
+           revision="15" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
 
   <!-- Remote Device -->
-  <project path="device/aurora/sepolicy" name="device_aurora_sepolicy" revision="14" remote="aurora" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="14" remote="aurora" />
+  <project path="device/aurora/sepolicy" name="device_aurora_sepolicy" revision="15" remote="aurora" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="15" remote="aurora" />
 
   <!-- Remote Frameworks  -->
-  <project path="frameworks/av" name="frameworks_av" remote="aurora" />
-  <project path="frameworks/base" name="frameworks_base" remote="aurora" />
-  <project path="frameworks/native" name="frameworks_native" remote="aurora" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="aurora" />
+  <project path="frameworks/av" name="frameworks_av" revision="15" remote="aurora" />
+  <project path="frameworks/base" name="frameworks_base" revision="15" remote="code" />
+  <project path="frameworks/native" name="frameworks_native" revision="15" remote="aurora" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" revision="15" remote="aurora" />
 
   <!-- Remote General repos -->
-  <project path="art" name="art" remote="aurora" />
-  <project path="bionic" name="bionic" remote="aurora" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="aurora" />
-  <project path="build/make" name="build" remote="aurora" >
+  <project path="art" name="art" revision="15" remote="aurora" />
+  <project path="bionic" name="bionic" revision="15" remote="aurora" />
+  <project path="bootable/recovery" name="bootable_recovery" revision="15" remote="aurora" />
+  <project path="build/make" name="build" revision="15" remote="aurora" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -37,18 +41,18 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="aurora" >
+  <project path="build/soong" name="build_soong" revision="15" remote="aurora" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="manifest" name="manifest" remote="aurora" />
-  <project path="platform_testing" name="platform_testing" revision="14" remote="aurora" />
+  <project path="manifest" name="manifest" revision="15" remote="aurora" />
+  <project path="platform_testing" name="platform_testing" revision="15" remote="aurora" />
 
   <!-- Remote Hardware -->
-  <project path="hardware/aurora/interfaces" name="hardware_aurora_interfaces" remote="aurora" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="aurora" />
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" revision="14" remote="aurora" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" revision="14" remote="aurora" >
+  <project path="hardware/aurora/interfaces" name="hardware_aurora_interfaces" revision="15" remote="aurora" />
+  <project path="hardware/interfaces" name="hardware_interfaces" revision="15" remote="aurora" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" revision="15" remote="aurora" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" revision="15" remote="aurora" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -80,20 +84,21 @@
   </project>
 
   <!-- Remote Packages -->
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="aurora" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aurora" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" revision="15" remote="aurora" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" revision="15" remote="aurora" />
 
   <!-- Remote Packages Modules -->
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="aurora" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" revision="14" remote="aurora" />
-  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="aurora" />
-  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="aurora" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" revision="15" remote="aurora" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" revision="15" remote="aurora" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" revision="15" remote="aurora" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" revision="15" remote="aurora" />
 
   <!-- Remote System -->
-  <project path="system/core" name="system_core" remote="aurora" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="aurora" />
-  <project path="system/update_engine" name="system_update_engine" remote="aurora" />
+  <project path="system/core" name="system_core" revision="15" remote="code" />
+  <project path="system/sepolicy" name="system_sepolicy" revision="15" remote="aurora" />
+  <project path="system/update_engine" name="system_update_engine" revision="15" remote="aurora" />
 
   <!-- Remote Vendor -->
-  <project path="vendor/aurora" name="vendor_aurora" revision="14" remote="aurora" />
+  <project path="vendor/aurora" name="vendor_aurora" revision="15" remote="aurora" />
+  <project path="vendor/gms" name="vendor_gms" revision="15" remote="code" />
 </manifest>

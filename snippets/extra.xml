@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="blaze"
+          fetch="https://github.com/ProjectBlaze"
+          revision="15"  />
+
+  <remote name="blaze-extra"
+          fetch="https://github.com/ProjectBlaze-Extras"
+          revision="15"  />
+  <!-- External Repos -->
+  <project path="external/dtc" name="external_dtc" remote="blaze-extra" />
+  <project path="external/libnl" name="external_libnl" remote="blaze-extra" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="blaze" />
+  <project path="external/mksh" name="external_mksh" remote="blaze" />
+  <project path="external/libcxx" name="external_libcxx" groups="pdk" remote="blaze-extra" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="blaze" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="blaze-extra" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="blaze-extra" />
+  <project path="external/zstd" name="external_zstd" groups="pdk" remote="blaze-extra" />
+</manifest>
