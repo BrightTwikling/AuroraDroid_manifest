@@ -102,6 +102,7 @@
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" revision="14" remote="aurora" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="aurora" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="aurora" />
+   <project path="packages/overlays/Themes" name="packages_overlays_Themes" revision="14" remote="aurora" />
 
   <!-- Remote System -->
   <project path="system/core" name="system_core" remote="aurora" />
