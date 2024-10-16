@@ -112,7 +112,6 @@
   <remove-project name="platform/platform_testing" />
 
   <!-- Hardware repos -->
-  <!-- Hardware -->
   <remove-project name="platform/hardware/google/gchips" />
   <remove-project name="platform/hardware/google/graphics/common" />
   <remove-project name="platform/hardware/google/pixel" />
@@ -121,6 +120,13 @@
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/hardware/qcom/sm7250/display" />
+  <remove-project name="platform/hardware/qcom/sm7250/gps" />
+  <remove-project name="platform/hardware/qcom/sm7250/media" />
+  <remove-project name="platform/hardware/qcom/sm8150/gps" />
+  <remove-project name="platform/hardware/qcom/sm8150/display" />
+  <remove-project name="platform/hardware/qcom/sm8150/media" />
+  <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
 
   <!-- Packages repos -->
   <remove-project name="platform/packages/apps/Calendar" />
