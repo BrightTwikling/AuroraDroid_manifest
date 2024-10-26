@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="lineage"
-           fetch="https://github.com/LineageOS"
-           revision="refs/heads/lineage-21.0" />
+  <remote name="git"
+  fetch="https://www.github.com/" />
+
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
+          review="https://review.lineageos.org/"
+          revision="refs/heads/lineage-22.0" />
 
   <!-- External -->
-  <project path="external/cronet" name="android_external_cronet" remote="lineage" />
+  <!-- <project path="external/cronet" name="android_external_cronet" remote="lineage" /> -->
  <!-- <project path="external/dtc" name="android_external_dtc" remote="lineage" /> -->
-  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
+  <!-- <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" /> -->
  <!-- <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
   <project path="external/libcxx" name="android_external_libcxx" remote="lineage" />
   <project path="external/libnl" name="android_external_libnl" groups="pdk" remote="lineage" /> -->
-  <project path="external/libncurses" name="android_external_libncurses" remote="lineage" />
-  <project path="external/libvpx" name="android_external_libvpx" remote="lineage" />
+  <!-- <project path="external/libncurses" name="android_external_libncurses" remote="lineage" /> -->
+  <!-- <project path="external/libvpx" name="android_external_libvpx" remote="lineage" /> -->
 <!--  <project path="external/mksh" name="android_external_mksh" remote="lineage" /> -->
-  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
-  <project path="external/openssh" name="android_external_openssh" remote="lineage" />
-  <project path="external/rsync" name="android_external_rsync" remote="lineage" />
-  <project path="external/unrar" name="android_external_unrar" remote="lineage" />
-  <project path="external/webp" name="android_external_webp" remote="lineage" />
-  <project path="external/vim" name="android_external_vim" remote="lineage" />
+  <!-- <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" /> -->
+  <!-- <project path="external/openssh" name="android_external_openssh" remote="lineage" /> -->
+  <!-- <project path="external/rsync" name="android_external_rsync" remote="lineage" /> -->
+  <!-- <project path="external/unrar" name="android_external_unrar" remote="lineage" /> -->
+  <!-- <project path="external/webp" name="android_external_webp" remote="lineage" /> -->
+  <!-- <project path="external/vim" name="android_external_vim" remote="lineage" /> -->
 <!--  <project path="external/zstd" name="android_external_zstd" remote="lineage" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="lineage" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="lineage" /> -->
@@ -31,8 +35,8 @@
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="lineage" />
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="lineage" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="lineage" />
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="lineage" revision="lineage-21" />
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage" revision="lineage-21" />
+  <project path="hardware/mediatek" name="LineageOS/android_hardware_mediatek" remote="git" revision="lineage-21" />
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="git" revision="lineage-21" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="lineage" />
   <project path="hardware/ril" name="android_hardware_ril" remote="lineage" />
   <project path="kernel/configs" name="android_kernel_configs" remote="lineage" />
