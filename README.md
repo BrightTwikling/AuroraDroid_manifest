@@ -6,7 +6,7 @@ To get started with AuroraDroid, you'll need to get familiar with [Repo](https:/
 To initialize your local repository, use a command like this:
 
 ```bash
-repo init -u https://github.com/AuroraDroid/manifest -b 14 --git-lfs
+repo init -u https://github.com/BrightTwikling/AuroraDroid_manifest -b 14_zf7 --git-lfs
 ```
 
 Then to sync up:
