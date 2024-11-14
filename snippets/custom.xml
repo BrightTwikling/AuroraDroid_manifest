@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="BrightTwikling3"  fetch="https://github.com/BrightTwikling" />
+
+  <remove-project name="vendor_aurora" />
+  <project path="vendor/aurora" name="AuroraDroid_vendor_aurora" remote="BrightTwikling3" revision="14" />
+
+</manifest>

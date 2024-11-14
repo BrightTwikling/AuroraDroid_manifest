@@ -1391,4 +1391,6 @@
   <!-- AuroraDroid repos -->
   <include name="snippets/lineage.xml" />
   <include name="snippets/aurora.xml" />
+
+  <include name="snippets/custom.xml" />
 </manifest>
