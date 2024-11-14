@@ -6,4 +6,6 @@
   <remove-project name="vendor_aurora" />
   <project path="vendor/aurora" name="AuroraDroid_vendor_aurora" remote="BrightTwikling3" revision="14" />
 
+  <remove-project name="packages_apps_Auroras" />
+  <project path="packages/apps/Auroras" name="AuroraDroid_packages_apps_Auroras" remote="BrightTwikling3" revision="14" />
 </manifest>
